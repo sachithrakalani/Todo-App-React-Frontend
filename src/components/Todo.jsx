@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export function Todo() {
+    const [todo , setTodo] = useState(todo);
   return (
     <div>
       <form>
