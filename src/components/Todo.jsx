@@ -2,8 +2,11 @@ import { useState } from "react";
 
 export function Todo() {
     const [todo , setTodo] = useState("");
+    const [todos , setTodos] = useState([]);
     function handleSubmit(e){
         e.preventDefault();
+        setTodos([...todos,todo]);
+        setTodo("");
     }
   return (
     <div>
