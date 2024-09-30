@@ -19,7 +19,6 @@ export default function Todo() {
         />
         <button type="submit"> Add </button>
       </form>
-      {/* {todos} */}
       {todos.map((item) => (
         <TodoItem key={item} item={item} />
       ))}
