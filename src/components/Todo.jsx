@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TodoItem from "./TodoItem";
+import TodoList from "./TodoList";
 import Form from "./Form";
 
 export default function Todo() {
@@ -7,9 +7,7 @@ export default function Todo() {
   return (
     <div>
       <Form  todos={todos} setTodos={setTodos}/>
-      {todos.map((item) => (
-        <TodoItem key={item} item={item} />
-      ))}
+      <TodoList todos={todos} />
     </div>
   );
 }
