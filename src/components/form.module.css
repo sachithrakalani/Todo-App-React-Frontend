@@ -7,3 +7,15 @@
     margin-top: 50px;
     box-shadow: 0 4px 6px rgb(0,0,0,0.1)
 }
+
+.inputField{
+    display: block;
+    width: 100%;
+    border:none;
+    color: black;
+    font-size: 16px;
+}
+
+.inputField:focus{
+    outline:none;
+}
