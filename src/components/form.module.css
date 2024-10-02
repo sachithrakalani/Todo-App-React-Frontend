@@ -19,3 +19,18 @@
 .inputField:focus{
     outline:none;
 }
+
+.submitButton{
+    display: inline-block;
+    border:none;
+    border-radius:4px;
+    background-color:#f59fe4;
+    font-size:20px;
+    padding: 12px 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.inputContainer{
+    display: flex;
+}
