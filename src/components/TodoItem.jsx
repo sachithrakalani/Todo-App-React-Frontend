@@ -1,10 +1,8 @@
 export default function TodoItem({ item }) {
     return (
       <div>
-        <h3>{item}</h3>
+        <input type="radio"/>
+        <span>{item}</span>
       </div>
     );
 }
-
-  
-  
