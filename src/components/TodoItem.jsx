@@ -4,7 +4,7 @@ export default function TodoItem({ item }) {
     return (
       <div className={styles.itemcontainer}>
         <input className={styles.todocheckbox} type="radio"/>
-        <span>{item}</span>
+        <span className={styles.todotextname}>{item}</span>
       </div>
     );
 }
