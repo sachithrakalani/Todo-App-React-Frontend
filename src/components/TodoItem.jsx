@@ -1,10 +1,10 @@
+import styles from "./todoitem.module.css";
+
 export default function TodoItem({ item }) {
     return (
-      <div>
-        <h3>{item}</h3>
+      <div className={styles.itemcontainer}>
+        <input className={styles.todocheckbox} type="radio"/>
+        <span className={styles.todotextname}>{item}</span>
       </div>
     );
 }
-
-  
-  

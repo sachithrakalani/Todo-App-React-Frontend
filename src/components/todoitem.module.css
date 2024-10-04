@@ -1,0 +1,24 @@
+.itemcontainer{
+    display:flex;
+    align-items:center;
+    background-color:#f7f7f7;
+    border-radius:30px;
+    padding:15px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease;
+}
+
+.todocheckbox{
+    margin-right: 12px;
+    transform: scale(1.2);
+} 
+
+.todotextname{
+    font-size: 25px;
+    color: #070708;
+}
+
+.todo-item-container:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
