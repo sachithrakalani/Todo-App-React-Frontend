@@ -17,8 +17,24 @@
 .todotextname{
     font-size: 25px;
     color: #070708;
+    flex-grow: 1; 
 }
 
 .todo-item-container:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
+}
+
+.deleteButton {
+    padding: 12px 20px;
+    border: none;
+    background-color: hsl(311, 86%, 72%);
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-left: auto; 
+}
+
+
+
+
+
