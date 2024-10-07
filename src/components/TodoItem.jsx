@@ -1,8 +1,9 @@
 import styles from "./todoitem.module.css";
 
-export default function TodoItem({ item }) {
+export default function TodoItem({ item , todos , setTodos }) {
   function handleDelete(item) {
     console.log("Press Delete Button", item);
+    setTodos(todos.filter((todo)=> todo !== item));
   }
   return (
     <div className={styles.itemcontainer}>
