@@ -34,7 +34,10 @@
     margin-left: auto; 
 }
 
-
+.strikethrough {
+    text-decoration: line-through;
+    color: gray;
+  }
 
 
 
