@@ -25,7 +25,8 @@ export default function TodoItem({ item, todos, setTodos }) {
           isChecked ? styles.strikethrough : ""
         }`}
       >
-        {item}
+        {item.todo} :    {item.date}
+
       </span>
       <span>
         {" "}
@@ -39,6 +40,5 @@ export default function TodoItem({ item, todos, setTodos }) {
     </div>
   );
 }
-
 
 

@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./form.module.css";
 
 export default function Form({ todos = { todos }, setTodos = { setTodos } }) {
   const [todo, setTodo] = useState("");
+  const [date, setDate] = useState("");
 
+  
   function handleSubmit(e) {
+    
     e.preventDefault();
-    setTodos([...todos, todo]);
+    setTodos([...todos, {todo,date}]);
     setTodo("");
   }
   return (
@@ -20,6 +23,7 @@ export default function Form({ todos = { todos }, setTodos = { setTodos } }) {
             type="text"
             placeholder="Enter Todo item..."
           />
+          <input className={styles.date} type="date" onChange={(e) => setDate(e.target.value)} value={date}></input>
           <button className={styles.submitButton} type="submit">
             {" "}
             Add{" "}
